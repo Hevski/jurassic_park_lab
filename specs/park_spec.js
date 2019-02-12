@@ -42,7 +42,7 @@ describe('Park', function() {
     assert.strictEqual(actual, 2)
   });
 
-  xit('should be able to find the dinosaur that attracts the most visitors', function(){
+  it('should be able to find the dinosaur that attracts the most visitors', function(){
     actual = park.mostPopularDinosaur()
     assert.strictEqual(actual, dinosaur2)
   });

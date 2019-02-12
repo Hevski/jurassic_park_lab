@@ -20,10 +20,9 @@ Park.prototype.removeDinosaur = function(dinosaur) {
 };
 
 // Park.prototype.mostPopularDinosaur = function () {
-//   this.dinosaurs.forEach(function(dinosaur) {
-//     let highestDinosaur =
-//     if (dinosaur.guestsAttractedPerDay > highestDinosaur)
-//   });
+//   this.dinosaurs.sort(function (a, b) {
+//   console.log((a.guestsAttractedPerDay - b.guestsAttractedPerDay))
+// }) // i have no clue what im doing
 // };
 
 Park.prototype.findAllBySpecies = function(type) {
@@ -31,9 +30,10 @@ Park.prototype.findAllBySpecies = function(type) {
 };
 
 // Park.prototype.deleteAllBySpecies = function(type) {
+//      this.findAllBySpecies()
 //    this.dinosaurs.filter(function(dinosaur) {
 //    return dinosaur.species !== type;
-//   });
+//   }); //again, i have no clue
 // };
 
 Park.prototype.visitsPerDay = function () {
