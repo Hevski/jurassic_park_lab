@@ -30,7 +30,7 @@ Park.prototype.findAllBySpecies = function(type) {
 };
 
 Park.prototype.deleteAllBySpecies = function(type) {
-   for (var dinosaur in this.dinosaurs.length-1){
+   for (var dinosaur in this.dinosaurs){
      if (this.dinosaurs[dinosaur] === type) this.dinosaurs.splice(dinosaur, 1)
    }
    // this.dinosaurs.filter(function(dinosaur) {
