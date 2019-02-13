@@ -53,7 +53,7 @@ describe('Park', function() {
     assert.deepStrictEqual(actual, [dinosaur3, dinosaur4])
   });
 // test not passing
-  xit('should be able to remove all dinosaurs of a particular species', function(){
+  it('should be able to remove all dinosaurs of a particular species', function(){
     actual = park.deleteAllBySpecies('dipladocus')
     assert.deepStrictEqual(actual, [dinosaur1, dinosaur2])
   });

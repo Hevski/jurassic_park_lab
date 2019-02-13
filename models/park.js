@@ -29,12 +29,14 @@ Park.prototype.findAllBySpecies = function(type) {
   return this.dinosaurs.filter(dinosaur => dinosaur.species === type);
 };
 
-// Park.prototype.deleteAllBySpecies = function(type) {
-//      this.findAllBySpecies()
-//    this.dinosaurs.filter(function(dinosaur) {
-//    return dinosaur.species !== type;
-//   }); //again, i have no clue
-// };
+Park.prototype.deleteAllBySpecies = function(type) {
+   for (var dinosaur in this.dinosaurs.length-1){
+     if (this.dinosaurs[dinosaur] === type) this.dinosaurs.splice(dinosaur, 1)
+   }
+   // this.dinosaurs.filter(function(dinosaur) {
+   // return dinosaur.species !== type;
+ //again, i have no clue
+};
 
 Park.prototype.visitsPerDay = function () {
   dayVisits = 0
